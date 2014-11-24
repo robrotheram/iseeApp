@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="iseeapp.co.iseeapp.MenuFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.pkmmte.view.CircularImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        app:border_color="#EEEEEE"
+        app:border_width="4dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        app:shadow="true"
+        android:id="@+id/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create New Game"
+            android:layout_margin="5dp"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_default_bg"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guess"
+            android:id="@+id/button2"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/button3"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_default_bg"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="See Ratings"
+            android:id="@+id/button3"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_below="@+id/button"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_default_bg"
+            />
+        <com.facebook.widget.LoginButton
+            android:id="@+id/connectWithFbButton"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:text="connect_with_facebook"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/relativeLayout1"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.pkmmte.view.CircularImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"
+        app:border_color="#EEEEEE"
+        app:border_width="4dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        app:shadow="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo"/>
+
+<TextView
+    android:id="@+id/SecondText"
+    android:layout_width="0dp"
+    android:layout_height="80dp"
+    android:text="Second"
+    android:textAlignment="center"
+
+    android:textSize="30dp"
+    android:padding="5dp"
+    android:layout_weight="1">
+</TextView>
+
+<TextView
+    android:id="@+id/ThirdText"
+    android:layout_width="0dp"
+    android:layout_height="80dp"
+    android:text="Third"
+    android:textAlignment="center"
+
+    android:textSize="30dp"
+    android:padding="5dp"
+    android:layout_weight="1">
+</TextView>
+</LinearLayout>
+

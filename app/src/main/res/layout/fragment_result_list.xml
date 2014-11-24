@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal|bottom"
+        android:layout_below="@+id/imageView">
+
+        <TextView
+            android:id="@+id/Col_FirstText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rank"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:padding="10dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/Col_SecondText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:text="Name">
+        </TextView>
+
+        <TextView
+            android:id="@+id/Col_ThirdText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_weight="1">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_alignParentLeft="true">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+        </ListView>
+
+    </LinearLayout>
+
+
+
+    <com.pkmmte.view.CircularImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/logo"
+        app:border_color="#EEEEEE"
+        app:border_width="4dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        app:shadow="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:id="@+id/imageView"/>
+</RelativeLayout>
